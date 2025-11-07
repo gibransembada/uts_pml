@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Bahan - StockFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-frame">
+        <div class="screen">
+            <div class="header">
+                <h1>Tambah/Edit Bahan</h1>
+                <p>Isi detail bahan baku</p>
+            </div>
+            <main class="main-content">
+                <form class="save-form" data-success-message="Bahan berhasil disimpan!" data-redirect-url="bahan_list.html">
+                    <div class="form-group">
+                        <label for="name">Nama Bahan</label>
+                        <input type="text" id="name" placeholder="cth: Sirup Vanila" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Kategori</label>
+                        <select id="category" required>
+                            <option>Bahan Kopi</option>
+                            <option>Susu</option>
+                            <option>Sirup</option>
+                            <option>Bahan Makanan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="unit">Satuan Ukur</label>
+                        <select id="unit" required>
+                            <option>kg</option>
+                            <option>gram</option>
+                            <option>liter</option>
+                            <option>ml</option>
+                            <option>pcs</option>
+                            <option>botol</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="min_stock">Stok Minimum</label>
+                        <input type="number" id="min_stock" placeholder="cth: 5" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Simpan Bahan</button>
+                    <button type="button" class="btn btn-secondary btn-cancel" style="margin-top: 10px;">Batal</button>
+                </form>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
